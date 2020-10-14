@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+<style>
+	body,html{
+		padding: 0;
+		margin: 0;
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+</style>
+<script>
+	$("body").ready(function(){
+		setInterval(() => {
+			w = Math.floor(Math.random() * window.innerWidth);
+			h = Math.floor(Math.random() * window.innerHeight);
+			s = Math.floor(Math.random() * 1000);
+			let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+
+			$("#float_txt3").css({"top":h,"left":w,"font-size":s,"color": "#"+randomColor});
+			$("#float_txt1").css({"top":h,"left":w,"font-size":s,"color": "#"+randomColor});
+			$("#float_txt2").css({"top":h,"left":w,"font-size":s,"color": "#"+randomColor});
+			$("#float_txt4").css({"top":h,"left":w,"font-size":s,"color": "#"+randomColor});
+			$("#float_txt5").css({"top":h,"left":w,"font-size":s,"color": "#"+randomColor});
+			$("#float_txt6").css({"top":h,"left":w,"font-size":s,"color": "#"+randomColor});
+			$("#float_txt7").css({"top":h,"left":w,"font-size":s,"color": "#"+randomColor});
+		}, 100);		
+	});
+</script>
+<body>
+	<div id="float_txt3" style="position: fixed;top:0;left:0;">HAIYAA</div>
+	<div id="float_txt1" style="position: fixed;top:0;left:0;">HAIYAA</div>
+	<div id="float_txt2" style="position: fixed;top:0;left:0;">HAIYAA</div>
+	<div id="float_txt4" style="position: fixed;top:0;left:0;">HAIYAA</div>
+	<div id="float_txt5" style="position: fixed;top:0;left:0;">HAIYAA</div>
+	<div id="float_txt6" style="position: fixed;top:0;left:0;">HAIYAA</div>
+	<div id="float_txt7" style="position: fixed;top:0;left:0;">HAIYAA</div>
+	<img style="width: 100vw;height: 100vh;" src="/CO1UbFT.gif">
+</body>
+</html>
