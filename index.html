@@ -17,10 +17,10 @@
 <script>
 	$("body").ready(function(){
 		setInterval(() => {
-			w = Math.floor(Math.random() * window.innerWidth);
-			h = Math.floor(Math.random() * window.innerHeight);
-			s = Math.floor(Math.random() * 1000);
 			let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+			let h = () => Math.floor(Math.random() * window.innerHeight);
+			let w = () => Math.floor(Math.random() * window.innerWidth);
+			let s = () => Math.floor(Math.random() * 100);
 
 			$("#float_txt3").css({"top":h,"left":w,"font-size":s,"color": "#"+randomColor});
 			$("#float_txt1").css({"top":h,"left":w,"font-size":s,"color": "#"+randomColor});
